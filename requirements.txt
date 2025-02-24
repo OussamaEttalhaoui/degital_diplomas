@@ -1,0 +1,9 @@
+web3
+pymongo
+python-dotenv
+pytesseract
+Pillow
+transformers
+pdfplumber
+reportlab
+torch
