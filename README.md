@@ -1,12 +1,12 @@
-# 🎓 Digitalization of Academic Diplomas using NLP & Blockchain
+#  Digitalization of Academic Diplomas using NLP & Blockchain
 
-## 📌 Overview
+##  Overview
 This project automates and secures academic diploma management by combining **Natural Language Processing (NLP)** and **blockchain technology**.  
 Diploma information is automatically extracted from images or PDF files and securely registered on the blockchain to ensure **authenticity, integrity, and traceability**.
 
 ---
 
-## ⚙️ Technologies
+##  Technologies
 - **Ethereum (Ganache, Truffle)** – Smart contracts  
 - **Web3.py** – Blockchain interaction  
 - **Streamlit** – User interface  
@@ -16,7 +16,7 @@ Diploma information is automatically extracted from images or PDF files and secu
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 - Extract diploma data from images and PDFs  
 - NLP-based information extraction using BERT  
 - Secure diploma storage on the blockchain  
@@ -25,7 +25,7 @@ Diploma information is automatically extracted from images or PDF files and secu
 
 ---
 
-## 🔄 Workflow
+##  Workflow
 1. Upload diploma (image or PDF)  
 2. OCR + NLP data extraction  
 3. Data validation (MongoDB)  
@@ -35,7 +35,7 @@ Diploma information is automatically extracted from images or PDF files and secu
 
 ---
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Python 3.x  
@@ -46,7 +46,22 @@ Diploma information is automatically extracted from images or PDF files and secu
 
 ---
 
-### Install Dependencies
-**Python dependencies**
+### Install Dependencies and Run the Project
 ```bash
+# Install Python dependencies
 pip install -r requirements.txt
+
+# Install Blockchain tools
+npm install -g truffle
+
+# Deploy Smart Contracts
+cd blockchain
+npm install
+truffle compile
+truffle migrate
+
+# Copy the deployed contract address and add it to the .env file
+
+# Launch the Streamlit App
+cd ../frontend
+streamlit run streamlit_app.py
