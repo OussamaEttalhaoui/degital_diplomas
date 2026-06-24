@@ -46,26 +46,6 @@ Diploma information is automatically extracted from images or PDF files and secu
 
 ---
 
-### Install Dependencies and Run the Project
-```bash
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Install Blockchain tools
-npm install -g truffle
-
-# Deploy Smart Contracts
-cd blockchain
-npm install
-truffle compile
-truffle migrate
-
-# Copy the deployed contract address and add it to the .env file
-
-# Launch the Streamlit App
-cd ../frontend
-streamlit run streamlit_app.py
-
 ## 🛠️ Realization
 
 After launching the project, the main interface allows users to upload a diploma file (PDF or image) for digital processing.
@@ -121,3 +101,25 @@ Transactions can be verified using Ganache, showing all blockchain records.
 All validated diploma data is stored in MongoDB in a structured format for future use and retrieval.
 
 <img width="454" height="215" alt="image" src="https://github.com/user-attachments/assets/6b73aac2-9a4e-493f-bf3a-09ff4b593c08" />
+
+### Install Dependencies and Run the Project
+```bash
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Install Blockchain tools
+npm install -g truffle
+
+# Deploy Smart Contracts
+cd blockchain
+npm install
+truffle compile
+truffle migrate
+
+# Copy the deployed contract address and add it to the .env file
+
+# Launch the Streamlit App
+cd ../frontend
+streamlit run streamlit_app.py
+
+
